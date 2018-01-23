@@ -1,0 +1,42 @@
+
+
+
+<nav class="persistent-nav">
+  <div class="main-picture">
+    <img height="200" width="200" src="/images/Candice_Steve_KJ_Wedding.jpg" />
+  </div>
+
+  <div>
+    <ul>
+      <li><a href ng-click="$ctrl.selectWelcome()"><span>Welcome</span></a></li>
+      <li><a href ng-click="$ctrl.selectHowDidThisHappen()"><span>How Did This Happen?</span></a></li>
+      <li><a href ng-click="$ctrl.selectVenueAndTravel()"><span>Venue and Travel</span></a></li>
+      <li><a href ng-click="$ctrl.selectRegistry()"><span>Registry</span></a></li>
+      <li><a href ng-click="$ctrl.selectRsvp()"><span>RSVP</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="major-quote">
+  <p>"This is a quote"<br/> - Steve</p>
+</section>
+
+<div ng-if="$ctrl.selectedPage == 'welcome'">
+  <welcome-information></welcome-information>
+</div>
+<div ng-if="$ctrl.selectedPage == 'how-did-this-happen'">
+  <div class="error"><h1>The story is under construction.</h1></div>
+</div>
+<div ng-if="$ctrl.selectedPage == 'venue-and-travel'">
+  <div class="error"><h1>This information is under construction.</h1></div>
+</div>
+<div ng-if="$ctrl.selectedPage == 'registry'">
+  <div class="error"><h1>The registry is under construction.</h1></div>
+</div>
+<div ng-if="$ctrl.selectedPage == 'rsvp'">
+  <div class="error"><h1>This utility is under construction.</h1></div>
+</div>
+
+<footer>
+  
+</footer>
