@@ -1,0 +1,35 @@
+.radio-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .radio {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+    background: lightblue;
+    cursor: pointer;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+
+    &:hover {
+      background: lightgrey;
+    }
+  }
+
+  .first {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .last {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}

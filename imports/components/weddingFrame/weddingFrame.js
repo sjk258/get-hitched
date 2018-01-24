@@ -26,6 +26,14 @@ class WeddingFrameController {
     this.selectedPage = "registry";
   }
 
+  selectPhotos() {
+    this.selectedPage = "photos";
+  }
+
+  selectSurvey() {
+    this.selectedPage = "survey";
+  }
+
   selectRsvp() {
     this.selectedPage = "rsvp";
   }

@@ -1,0 +1,63 @@
+<h2>Story So Far...</h2>
+
+<article>
+  <div ng-show="$ctrl.author == 'steve'">
+    <p>
+      Interested in our story are you? Well strap in and prepare yourselves. This here is one <i>wild</i> ride. But before we get going, make sure you choose which point of view you'd like to hear it told from. Really think about it. Do you want to read something of epic grandeur, flourish and beauty? Or something weird and vague such as Candice might write...
+    </p>
+    <p>
+      If you'd really like to read Candice's version, well, your funeral:<br /><button ng-click="$ctrl.author = 'candice'">Read Candice's Version</button>
+    </p>
+  </div>
+  <div ng-show="$ctrl.author == 'candice'">
+    <p>
+      How many of you out there can say that they know the real story behind this magical day? The trials and tribulations that this relationship faced? The various situations and circumstances that turned this improbability into a reality? You're in the right place. Below, you can find a detailed accounting of the events leading up to this day from the view point of the bride herself.
+    </p>
+    <p>
+      Ready to turn this story up a notch? Come on over:<br /><button ng-click="$ctrl.author = 'steve'">Read Steve's Version</button>
+    </p>
+  </div>
+</article>
+
+<div ng-show="$ctrl.author == 'steve'">
+  <div class="spacer-15-px"></div>
+  <h3>A tale as told by Steve</h3>
+
+  <article>
+    <p>
+      Many moons ago, there was a boy. A boy who was relatively quiet, a little unsure of himself, and positively terrified of the real world. So far in life, this boy had managed to survive by focusing on one day at a time, never looking to or worrying about the future. The future, you see, was already written in stone. It was fairly simple: Graduate, get a kick-ass job, make bank, move to New Zealand. Completely foolproof, right?
+    </p>
+  </article>
+
+  <article>
+    <p>
+      I know what you're thinking. How could a plan that makes so much sense possibly go wrong? Well despite his high opinion of himself, this boy didn't seem to be quite appealing to prospective employers. True, these were only internships he was applying to; but if no one would take him, how would he get real world experience? He begins to get nervous. Mass applications go out to any who would take them. Pyramid schemes begin to sound appealing...
+    </p>
+  </article>
+
+  <article>
+    <p>
+      Then, finally, he receives an offer. The Disney College Program. An internship program where he'd have to take a semester off of school to sell merchandise for a company who may very well be ruling the world by the time I'm done writing this. How could he even have applied for this? This has no relevance to his education or his future! So how do you respond? Well, with the most improbable response possible: "<b>yes.</b>"
+    </p>
+  </article>
+
+  <article>
+    <p>
+      Ladies and gentlemen, this is where the story begins. The boy in the preface, that was me. I know it's hard to believe that someone so strong, confident, handsome as I am could have been that person, had those doubts. But the truth can be surprising. And thus, we arrive in sunny Orlando, FL.
+    </p>
+  </article>
+
+  <article>
+    <p>
+      My goals with this internship program were fairly simple: meet new people, experience new things, have some damn fun. 
+    </p>
+  </article>
+    <!--
+    <img src="https://imgs.xkcd.com/comics/extrapolating.png">
+    -->
+  
+</div>
+
+<div ng-show="$ctrl.author == 'candice'">
+
+</div>

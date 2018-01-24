@@ -12,6 +12,8 @@
       <li><a href ng-click="$ctrl.selectHowDidThisHappen()"><span>How Did This Happen?</span></a></li>
       <li><a href ng-click="$ctrl.selectVenueAndTravel()"><span>Venue and Travel</span></a></li>
       <li><a href ng-click="$ctrl.selectRegistry()"><span>Registry</span></a></li>
+      <li><a href ng-click="$ctrl.selectPhotos()"><span>Pictures</span></a></li>
+      <li><a href ng-click="$ctrl.selectSurvey()"><span>Guest Survey</span></a></li>
       <li><a href ng-click="$ctrl.selectRsvp()"><span>RSVP</span></a></li>
     </ul>
   </div>
@@ -25,13 +27,19 @@
   <welcome-information></welcome-information>
 </div>
 <div ng-if="$ctrl.selectedPage == 'how-did-this-happen'">
-  <div class="error"><h1>The story is under construction.</h1></div>
+  <story-so-far></story-so-far>
 </div>
 <div ng-if="$ctrl.selectedPage == 'venue-and-travel'">
   <div class="error"><h1>This information is under construction.</h1></div>
 </div>
 <div ng-if="$ctrl.selectedPage == 'registry'">
   <div class="error"><h1>The registry is under construction.</h1></div>
+</div>
+<div ng-if="$ctrl.selectedPage == 'photos'">
+  <div class="error"><h1>The pictures are under construction.</h1></div>
+</div>
+<div ng-if="$ctrl.selectedPage == 'survey'">
+  <div class="error"><h1>The survey is under construction.</h1></div>
 </div>
 <div ng-if="$ctrl.selectedPage == 'rsvp'">
   <div class="error"><h1>This utility is under construction.</h1></div>
