@@ -2,6 +2,7 @@ import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 
 import template from './storySoFar.html';
+import storySteve from './storySteve.html';
 
 class StorySoFarController {
   constructor($scope) {

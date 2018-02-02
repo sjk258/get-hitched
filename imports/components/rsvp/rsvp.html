@@ -1,0 +1,29 @@
+<div ng-if="!$ctrl.isLoggedIn">
+  <div>Login</div>
+  <form ng-submit="$ctrl.submitLogin()">
+    <input type="userId" ng-model="$ctrl.loginForm.userId">
+    <input type="password" ng-model="$ctrl.loginForm.password">
+    <input type="submit" value="Login">
+  </form>
+</div>
+
+<div ng-if="$ctrl.isAdmin">
+<div>Add User</div>
+<form ng-submit="$ctrl.submitAddUser()">
+  <input type="userId" ng-model="$ctrl.createForm.userId">
+  <input type="password" ng-model="$ctrl.createForm.password">
+  <input type="submit" value="asdf">
+</form>
+</div>
+
+<div ng-if="$ctrl.isLoggedIn">
+  <form ng-submit="$ctrl.logout()">
+    <input type="submit" value="logout">
+  </form>
+</div>
+
+<div ng-repeat="user in $ctrl.users">
+  <span>{{user.username}}</span>
+  <span>{{user.isAdmin}}</span>
+  <div ng-if="user.isAdmin == 'true'">I'm an admin dammit!</div>
+</div>
