@@ -1,7 +1,7 @@
+<div style="overflow:hidden;width:100%;height:300px;">
+  <img style="width:100%;height:auto;max-width:100%;overflow:hidden;margin:-350px 0 0 0;" src="https://farm1.staticflickr.com/819/41410555582_6e04d82c38_b.jpg" />
+</div>
 <nav class="persistent-nav">
-  <div class="main-picture">
-    <img height="200" width="200" src="/images/Candice_Steve_KJ_Wedding.jpg" />
-  </div>
 
   <div>
     <ul>
@@ -17,7 +17,7 @@
 </nav>
 
 <section class="major-quote">
-  <p>"This is a quote"<br/> - Steve</p>
+  <p>{{$ctrl.quote.text}}<br/>- {{$ctrl.quote.author}}</p>
 </section>
 
 <div ng-if="$ctrl.selectedPage == 'welcome'">
@@ -30,7 +30,7 @@
   <venue-information></venue-information>
 </div>
 <div ng-if="$ctrl.selectedPage == 'registry'">
-  <div class="error"><h1>The registry is under construction.</h1></div>
+  <registry></registry>
 </div>
 <div ng-if="$ctrl.selectedPage == 'photos'">
   <pictures></pictures>
