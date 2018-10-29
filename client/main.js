@@ -8,6 +8,7 @@ import rsvp from '../imports/components/rsvp/rsvp';
 import pictures from '../imports/components/pictures/pictures';
 import venueInformation from '../imports/components/venueInformation/venueInformation';
 import registry from '../imports/components/registry/registry';
+import weddingDetails from '../imports/components/weddingDetails/weddingDetails';
 
 // From 'dotansimha:accounts-ui-angular'
 import { Accounts } from 'meteor/accounts-base';
@@ -21,5 +22,6 @@ angular.module('candice-and-steve-get-hitched', [
   pictures.name,
   venueInformation.name,
   registry.name,
+  weddingDetails.name,
   'accounts.ui'
 ]);

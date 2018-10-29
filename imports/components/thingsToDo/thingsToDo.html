@@ -9,11 +9,8 @@
       <li><a href ng-click="$ctrl.selectHowDidThisHappen()"><span>How Did This Happen?</span></a></li>
       <li><a href ng-click="$ctrl.selectVenueAndTravel()"><span>Venue and Travel</span></a></li>
       <li><a href ng-click="$ctrl.selectRegistry()"><span>Registry</span></a></li>
-      <li><a href ng-click="$ctrl.selectWeddingDetails()"><span>Details</span></a></li>
-      <li><a href ng-click="$ctrl.selectThingsToDo()"><span>Things To Do</span></a></li>
-      <li><a href ng-click="$ctrl.selectBridalParty()"><span>Bridal Party</span></a></li>
-      <!--<li><a href ng-click="$ctrl.selectPhotos()"><span>Pictures</span></a></li>
-      <li><a href ng-click="$ctrl.selectSurvey()"><span>Guest Survey</span></a></li>
+      <li><a href ng-click="$ctrl.selectPhotos()"><span>Pictures</span></a></li>
+      <!--<li><a href ng-click="$ctrl.selectSurvey()"><span>Guest Survey</span></a></li>
       <li><a href ng-click="$ctrl.selectRsvp()"><span>RSVP</span></a></li>-->
     </ul>
   </div>
@@ -34,15 +31,6 @@
 </div>
 <div ng-if="$ctrl.selectedPage == 'registry'">
   <registry></registry>
-</div>
-<div ng-if="$ctrl.selectedPage == 'wedding-details'">
-  <wedding-details></wedding-details>
-</div>
-<div ng-if="$ctrl.selectedPage == 'thingsToDo'">
-  <things-to-do></things-to-do>
-</div>
-<div ng-if="$ctrl.selectedPage == 'bridalParty'">
-  <bridal-party></bridal-party>
 </div>
 <!--<div ng-if="$ctrl.selectedPage == 'photos'">
   <pictures></pictures>

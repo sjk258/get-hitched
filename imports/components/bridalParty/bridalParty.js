@@ -49,18 +49,6 @@ class WeddingFrameController {
   selectRsvp() {
     this.selectedPage = "rsvp";
   }
-
-  selectWeddingDetails() {
-    this.selectedPage = "wedding-details";
-  }
-
-  selectThingsToDo() {
-    this.selectedPage = "thingsToDo";
-  }
-
-  selectBridalParty() {
-    this.selectedPage = "bridalParty";
-  }
 }
 
 export default angular.module('weddingFrame', [
